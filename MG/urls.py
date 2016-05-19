@@ -20,6 +20,6 @@ from radfahren import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', 'radfahren.views.index'),
+    url(r'', include('radfahren.urls')),
 
 ]
