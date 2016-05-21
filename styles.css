@@ -12,8 +12,7 @@ body {
 }
 
 .section .inner{
-  width: 100%;
-  
+  width: 100%;  
   font-family: 'Josefin Slab', serif;
   text-align: center;
   color: white;
@@ -28,8 +27,9 @@ body {
   font-size: 20px;
   margin-top: -650px;
   margin-right: 100px;
-  color: black;
-  width: 100%
+  color: white;
+  width: 100%;
+  font-weight: 600;
 }
 
 .donotshow {
