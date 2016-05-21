@@ -37,10 +37,10 @@ body {
 }
 
 .parallax-content1{
-  border:5px dashed red;
   width: 1000px;
   height: 1400px;
-  background-color: red;
+  background-image: url(hugefuckingpic.jpg);
+  background-size: cover;
 }
 
 .parallax-content2{
@@ -50,14 +50,6 @@ body {
  
 }
 
-
-
-.hugefuckingpic{
-  background-image: url("hugefuckingpic.jpg");
-  position:absolute;
-  bottom: 10px;
-  background-position: center;
-}
 
 .hugepic2{
   background-image: url("img2.jpg")
