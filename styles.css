@@ -11,14 +11,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center; 
-  flex-direction: column;
-  align-items: flex-top;
+  
 
 }
 
@@ -36,10 +29,9 @@ body {
   
 }
 
-.parallax-content1{ 
-  height: 1400px;
-  background-image: url(hugefuckingpic.jpg);
-  background-size: cover;
+.parallax-content1{ /*AKA background of the container*/
+  height: auto;
+  
 }
 
 .parallax-content2{
@@ -73,5 +65,11 @@ body {
 
 p.text:first-of-type {
   margin-top: 340px;
+}
+
+.color1 {
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
 }
 
