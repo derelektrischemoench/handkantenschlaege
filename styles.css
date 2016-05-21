@@ -13,33 +13,42 @@ body {
   overflow-y: auto; 
 }
 
-
 .layer_z1 {
-   z-index: 2;
-   position: absolute;
-   top: 100px;
-   height: 100px;
-   background-color: red;
-   width: auto;
+  z-index: 2;
+  position: relative;
+  top:0;
+  height: auto;
+  background-color: #A27A7A;
+
 }
 
 .layer_z0 {
   transform: translateZ(-2px) scale(3); 
-  margin: 0; 
+  margin: 0;
+  margin-left: -7px; 
   z-index: 0;
-  position: relative;
+  
   
 }
 
 
 .image1{
-  background: url('bike1.jpg') no-repeat center;
+  background: url('bike1.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   height: 600px;
   margin: 0;
 }
 
 .image2{
-  background: url('bike2.jpg') no-repeat center;
+  background: url('bike2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 600px;
   margin: 0;
 }
@@ -48,7 +57,10 @@ body {
   color:white;
   font-family: 'Open Sans' , sans-serif;
   font-size: 25px;
-  position: relative;
-  text-align: center;
+}
+
+.textpadding{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
