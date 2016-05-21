@@ -22,8 +22,8 @@
 	</div>
 </div>
 
-<div class="section2">
-	<div class="inner hideme">
+<div class="section2 donotshow">
+	<div class="inner">
 		<p>I mean you should seriously consider this. The number one reason to die of in industrialized Nations is fucking heart disease. And seriously, dying because of too little exercise and of being a lazy fuck is probably one of the lamest ways to go.
 		</p>
 
@@ -69,31 +69,12 @@
 $('.section').parallax({ 'coeff':-0.65 });
 $('.section .inner').parallax({ 'coeff':1.15 });
 	
-</script>
 
-<!--<script>
-	$(document).ready(function() {
-    $(window).scroll( function(){
-        $('.hideme').each( function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).addClass('showme');
-            }
-            if( bottom_of_window <= bottom_of_object ){
-                $(this).removeClass('showme');
-            }
-        });
-    });
-})
-
-</script>
-;-->
-<script>
 
 $(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 200) {    	
         $(".section2").fadeIn();
+
     } else {
         $(".section2").stop().fadeOut();
     }
