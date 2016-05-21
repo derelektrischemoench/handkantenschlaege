@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="jquery-1.12.4.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,400italic,600,700' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+     <script type="text/javascript">
+       takanaClient.run({host: 'localhost:48626'});
+     </script>
+
+
 </head>
 <body>
 
@@ -14,11 +21,26 @@
 		Why not go for a ride this weekend you lazy fuck?
 	</div>
 </div>
+
+<div class="section2">
+	<div class="inner hideme">
+		<p>I mean you should seriously consider this. The number one reason to die of in industrialized Nations is fucking heart disease. And seriously, dying because of too little exercise and of being a lazy fuck is probably one of the lamest ways to go.
+		</p>
+
+		<p>Consider the following: only 30 minutes of exercise a day will reduce your risk of dying by heart attacks, strokes, diabetus and whatnot by almost 9000 percent. That's fucking cool, right?</p>
+
+		<p>But wait, there's more. The more you exercise, the better you look. And this will significantly increase your chance of GETTING FUCKING LAID. I mean not dying was one thing, but this? Sheesh. You're goddamn fucking right.</p>
+
+		<p>So what's your excuse? Get out there, grab your bike AND GET THE FUCK ROLLING!!!</p>
+
+
+	</div>
+</div>
 	
 </body>
 <script>
 
-// The plugin code
+// Parallax
 (function($){
   $.fn.parallax = function(options){
     var $$ = $(this);
@@ -48,6 +70,36 @@ $('.section').parallax({ 'coeff':-0.65 });
 $('.section .inner').parallax({ 'coeff':1.15 });
 	
 </script>
+
+<!--<script>
+	$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window <= bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        });
+    });
+})
+
+</script>
+;-->
+<script>
+
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 200) {
+        $(".section2").fadeIn();
+    } else {
+        $(".section2").stop().fadeOut();
+    }
+});
+</script>
+
 
 
 </html>
