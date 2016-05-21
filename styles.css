@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center; 
   flex-direction: column;
-  align-items: center;
+  align-items: flex-top;
 
 }
 
@@ -36,8 +36,7 @@ body {
   
 }
 
-.parallax-content1{
-  width: 1000px;
+.parallax-content1{ 
   height: 1400px;
   background-image: url(hugefuckingpic.jpg);
   background-size: cover;
@@ -46,8 +45,8 @@ body {
 .parallax-content2{
   border:5px dashed green;
   height: 400px;
-  width: 1000px;
   background-color: red;
+  align-self: stretch;
  
 }
 
