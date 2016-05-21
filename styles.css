@@ -1,0 +1,85 @@
+html{
+  background: grey;
+}
+
+body {
+  margin: 0;
+}
+
+#parallax_container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.fullscreen-parallax {  
+  flex:1;
+}
+
+.layer_z1 {
+   z-index: 2;
+}
+
+.layer_z0 {
+  transform: translateZ(-2px) scale(3);  
+  
+}
+
+.parallax-content1{
+  border:5px dashed red;
+  width: 1000px;
+  height: 1400px;
+  background-color: red;
+}
+
+.parallax-content2{
+  border:5px dashed green;
+  height: 1000px;
+  background-color: green;
+ 
+}
+
+
+
+.hugefuckingpic{
+  background-image: url("hugefuckingpic.jpg");
+  position:absolute;
+  bottom: 10px;
+  background-position: center;
+}
+
+.hugepic2{
+  background-image: url("img2.jpg")
+}
+
+.image2{
+  background-image: url("img2.jpg");
+}
+
+.image3{
+  background-image: url("img3.jpg");
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+p.text:first-of-type {
+  margin-top: 340px;
+}
+
