@@ -5,17 +5,47 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="jquery-1.12.4.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,400italic,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div class="section">
 	<div class="inner">
-		saass
+		Why not go for a ride this weekend you lazy fuck?
 	</div>
 </div>
 	
 </body>
 <script>
+
+// The plugin code
+(function($){
+  $.fn.parallax = function(options){
+    var $$ = $(this);
+    offset = $$.offset();
+    var defaults = {
+      'start': 0,
+      'stop': offset.top + $$.height(),
+      'coeff': 0.95
+    };
+    var opts = $.extend(defaults, options);
+    return this.each(function(){
+      $(window).bind('scroll', function() {
+        windowTop = $(window).scrollTop();
+        if((windowTop >= opts.start) && (windowTop <= opts.stop)) {
+          newCoord = windowTop * opts.coeff;
+          $$.css({
+              'background-position': '0 '+ newCoord + 'px'
+          });
+        }
+      });
+    });
+  };
+})(jQuery);
+
+// call the plugin
+$('.section').parallax({ 'coeff':-0.65 });
+$('.section .inner').parallax({ 'coeff':1.15 });
 	
 </script>
 
