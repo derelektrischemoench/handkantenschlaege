@@ -45,7 +45,8 @@ body {
 
 .parallax-content2{
   border:5px dashed green;
-  height: 1000px;
+  height: 400px;
+  width: 1000px;
   background-color: red;
  
 }
