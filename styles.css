@@ -35,3 +35,48 @@ body {
 .donotshow {
   display: none;
 }
+
+#heading_container{
+  font-family: 'Josefin Slab', sans-serif;
+  font-size: 3em;
+  margin-top: 120px;
+  z-index: -10;
+  position: relative;
+}
+
+#heading_container>h1{
+  text-align: center;
+}
+
+.content_container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;  
+  
+  flex-direction: row;
+  margin: 5px;
+  margin-top: 300px;
+}
+
+.contentbox_small {
+ 
+  font-family: 'Josefin Slab', sans-serif;
+  flex:1;
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+.contentbox_middle {
+  
+  font-family: 'Josefin Slab', sans-serif;
+  flex:2;
+  font-size: 1.5em;
+}
+
+.contentbox_large{
+  
+  font-family: 'Josefin Slab', sans-serif;
+  flex:3;
+  font-size: 1.5em;
+}
