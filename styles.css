@@ -53,14 +53,33 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;  
-  
   flex-direction: row;
   margin: 5px;
-  margin-top: 300px;
+  margin-top: 250px;
+  justify-content: space-around;
 }
 
-.contentbox_small {
- 
+.image_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;  
+  flex-direction: row;
+  margin: 5px;
+  margin-top: 150px;
+  justify-content: space-around;
+  flex-shrink: 1
+}
+
+@media screen and (max-width: 1349px) {
+   .image_container{
+    flex-direction: column;
+   }
+}
+
+
+
+.contentbox_small { 
   font-family: 'Josefin Slab', sans-serif;
   flex:1;
   margin: 5px;
@@ -79,4 +98,17 @@ body {
   font-family: 'Josefin Slab', sans-serif;
   flex:3;
   font-size: 1.5em;
+}
+
+.imagebox_small {
+  width: auto;
+  height: 400px;
+}
+
+.imagebox_small img{
+  max-width: 500px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  display: block;
 }
